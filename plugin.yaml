@@ -1,0 +1,8 @@
+name: lanes
+version: 1.0.0
+description: >-
+  External agent lanes — Kanban cards assigned to a non-profile assignee are
+  claimed and handed to an outside harness (Paseo today, other CLIs through an
+  adapter), with a dashboard tab showing what is running and a cancel button.
+author: atostivint
+provides_hooks: []

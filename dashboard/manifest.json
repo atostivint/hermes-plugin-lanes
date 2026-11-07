@@ -1,0 +1,14 @@
+{
+  "name": "lanes",
+  "label": "Lanes",
+  "description": "External agent lanes — what runs outside Hermes, per Kanban card, with a cancel button",
+  "icon": "Activity",
+  "version": "1.0.0",
+  "tab": {
+    "path": "/lanes",
+    "position": "after:skills"
+  },
+  "entry": "dist/index.js",
+  "css": "dist/style.css",
+  "api": "plugin_api.py"
+}
