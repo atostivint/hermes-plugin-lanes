@@ -211,7 +211,8 @@ async def state(probe: bool = False):
                 }
                 if probe:
                     try:
-                        adapter = adapters_mod.get(lane.adapter)
+                        adapter = adapters_mod.get(
+                            lane.adapter, url=(getattr(lane, "adapter_url", "") or None))
                         entry["adapter_ok"], entry["adapter_detail"] = adapter.available()
                     except Exception as exc:
                         entry["adapter_ok"], entry["adapter_detail"] = False, f"{type(exc).__name__}: {exc}"
